@@ -9,11 +9,13 @@ document.addEventListener("mousemove", (e) => {
 document.querySelectorAll("a, button, li").forEach((el) => {
   el.addEventListener("mouseenter", () => {
     cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
-    cursor.style.background = "rgba(0, 172, 238, 0.7)";
+    cursor.style.background = "rgba(56, 238, 0, 0.7)";
+    cursor.style.border = "2px solid white";
   });
   el.addEventListener("mouseleave", () => {
     cursor.style.transform = "translate(-50%, -50%) scale(1)";
     cursor.style.background = "rgba(255, 255, 255, 0.7)";
+    cursor.style.border = "2px solid white";
   });
 });
 
@@ -63,6 +65,17 @@ function modedark(icon) {
   document.querySelectorAll(".footer-list li a i").forEach((el) => {
     el.style.color = "#010101";
   });
+  document.querySelectorAll(".paragraph").forEach((el) => {
+    el.style.color = "#010101";
+  });
+  const aboutmebox = document.querySelector("#about-me");
+  const projectbox = document.querySelector("#project");
+  aboutmebox.style.border = "2px solid black";
+  aboutmebox.style.color = "#010101";
+  projectbox.style.color = "#fff";
+  projectbox.style.backgroundColor = "#010101";
+  document.getElementById("myname").style.color = "#03045e";
+  MouseOnDarkMode();
 }
 
 function modelight(icon) {
@@ -79,4 +92,47 @@ function modelight(icon) {
   document.querySelectorAll(".footer-list li a i").forEach((el) => {
     el.style.color = "#fff";
   });
+  document.querySelectorAll(".paragraph").forEach((el) => {
+    el.style.color = "#fff";
+  });
+  const aboutmebox = document.querySelector("#about-me");
+  const projectbox = document.querySelector("#project");
+  aboutmebox.style.border = "2px solid white";
+  aboutmebox.style.color = "#fff";
+  projectbox.style.color = "#010101";
+  projectbox.style.backgroundColor = "#fff";
+  document.getElementById("myname").style.color = "#fff";
+  MouseOnLightMode();
 }
+
+function MouseOnLightMode() {
+  document.querySelectorAll("a, button, li").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
+      cursor.style.background = "rgba(56, 238, 0, 0.7)";
+      cursor.style.border = "2px solid white";
+    });
+    el.addEventListener("mouseleave", () => {
+      cursor.style.transform = "translate(-50%, -50%) scale(1)";
+      cursor.style.background = "rgba(255, 255, 255, 0.7)";
+      cursor.style.border = "2px solid white";
+    });
+  });
+}
+
+function MouseOnDarkMode() {
+  document.querySelectorAll("a, button, li").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
+      cursor.style.background = "rgba(0, 172, 238, 0.7)";
+      cursor.style.border = "2px solid black";
+    });
+    el.addEventListener("mouseleave", () => {
+      cursor.style.transform = "translate(-50%, -50%) scale(1)";
+      cursor.style.background = "rgba(255, 255, 255, 0.7)";
+      cursor.style.border = "2px solid black";
+    });
+  });
+}
+
+अनुज के.सी

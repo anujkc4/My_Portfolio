@@ -19,12 +19,12 @@ body {
 }
 
 .left-section {
-  width: 20.5vw;
+  width: 20vw;
   background-color: #090b18;
 }
 
 .right-section {
-  width: 79.5vw;
+  width: 80vw;
   background-color: #000115;
   color: #eaecef;
 }
@@ -154,7 +154,7 @@ body {
 
 .footer {
   height: 30%;
-  width: 20.5vw;
+  width: 20vw;
   margin-top: 60px;
 }
 
@@ -227,7 +227,7 @@ body {
 .divider::before {
   content: "";
   position: absolute;
-  left: 20.5vw;
+  left: 20vw;
   top: 0;
   width: 2px;
   height: 100%;
