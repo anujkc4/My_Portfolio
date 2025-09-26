@@ -32,14 +32,51 @@ var typed = new Typed("#element", {
   showCursor: true,
 });
 
+// const rightsection = document.querySelector(".right-section");
 const modebtn = document.getElementById("btn");
-modebtn.addEventListener("click", function (e) {
-  document.body.style.backgroundColor = "red";
+modebtn.addEventListener("click", function () {
+  const icon = document.querySelector("#btn i");
+  console.log(icon.className);
+
+  colorchnage(icon);
 });
-// function colorchnage(btn){
-//   if (btn == "dark") {
 
-//   } else {
+function colorchnage(icon) {
+  if (icon.className == "fa-regular fa-moon") {
+    modedark(icon);
+  } else {
+    modelight(icon);
+  }
+}
 
-//   }
-// }
+function modedark(icon) {
+  icon.className = "fa-solid fa-lightbulb";
+  icon.style.color = "#101010";
+  document.querySelector(".right-section").style.backgroundColor = "#ffff";
+  document.querySelector(".left-section").style.backgroundColor = "#e5d4d4ff";
+  document.querySelectorAll(".nav-list a").forEach((el) => {
+    el.style.color = "#010101";
+  });
+  document.querySelectorAll(".nav-list li").forEach((el) => {
+    el.style.color = "#010101";
+  });
+  document.querySelectorAll(".footer-list li a i").forEach((el) => {
+    el.style.color = "#010101";
+  });
+}
+
+function modelight(icon) {
+  icon.className = "fa-regular fa-moon";
+  icon.style.color = "#fff";
+  document.querySelector(".right-section").style.backgroundColor = "#000115";
+  document.querySelector(".left-section").style.backgroundColor = "#090b18";
+  document.querySelectorAll(".nav-list a").forEach((el) => {
+    el.style.color = "#eaecef";
+  });
+  document.querySelectorAll(".nav-list li").forEach((el) => {
+    el.style.color = "#eaecef";
+  });
+  document.querySelectorAll(".footer-list li a i").forEach((el) => {
+    el.style.color = "#fff";
+  });
+}
