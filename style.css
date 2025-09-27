@@ -2,8 +2,8 @@
   padding: 0px;
   margin: 0px;
   /* font-family: "Bodoni MT", "Didot", serif; */
-  /* font-family: 'Poppins', sans-serif; */
-  /* font-family: "Book Antiqua", Palatino, serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Book Antiqua", Palatino, serif;
   /* font-family: "Goudy Old Style", Garamond, serif; */
   box-sizing: border-box;
 }
@@ -111,7 +111,6 @@ body {
 .nav-list a {
   text-decoration: none;
   color: #eaecef;
-  font-family: "Book Antiqua", Palatino, serif;
 }
 
 .nav-list li:hover {
@@ -279,33 +278,33 @@ body {
 #text-3 {
   padding-left: 10px;
   font-size: 40px;
-  font-family: "Goudy Old Style", Garamond, serif;
+  /* font-family: "Goudy Old Style", Garamond, serif; */
 }
 
 #element {
   font-size: 35px;
-  font-family: "Goudy Old Style", Garamond, serif;
+  /* font-family: "Goudy Old Style", Garamond, serif; */
 }
 
 #text-4 {
   padding-left: 10px;
   margin-top: 25px;
   font-size: 20px;
-  font-family: "Goudy Old Style", Garamond, serif;
+  /* font-family: "Goudy Old Style", Garamond, serif; */
   color: #ffffff;
 }
 
 #text-5 {
   margin-left: 10px;
   font-size: 20px;
-  font-family: "Goudy Old Style", Garamond, serif;
+  /* font-family: "Goudy Old Style", Garamond, serif; */
   color: #ffffff;
 }
 
 #text-6 {
   margin-left: 10px;
   font-size: 20px;
-  font-family: "Goudy Old Style", Garamond, serif;
+  /* font-family: "Goudy Old Style", Garamond, serif; */
   color: #ffffff;
 }
 
@@ -374,4 +373,9 @@ body {
 #btn :active {
   transform: scale(0.9);
   transition: transform 0.1s ease;
+}
+
+#myname {
+  font-weight: 700;
+  font-family: "Goudy Old Style", Garamond, serif;
 }

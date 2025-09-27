@@ -27,12 +27,21 @@ var typed = new Typed("#element", {
     "a web-developer.",
     "&amp; web-designer.",
   ],
-  typeSpeed: 80,
-  backSpeed: 40,
-  backDelay: 1000,
+  typeSpeed: 100,
+  backSpeed: 150,
+  backDelay: 3000,
   loop: true,
   showCursor: true,
 });
+
+const texts = ["Anuj kc", "अनुज के.सी"];
+let index = 0;
+
+setInterval(() => {
+  // move to next text
+  index = (index + 1) % texts.length;
+  document.getElementById("myname").textContent = texts[index];
+}, 4000);
 
 // const rightsection = document.querySelector(".right-section");
 const modebtn = document.getElementById("btn");
@@ -74,7 +83,8 @@ function modedark(icon) {
   aboutmebox.style.color = "#010101";
   projectbox.style.color = "#fff";
   projectbox.style.backgroundColor = "#010101";
-  document.getElementById("myname").style.color = "#03045e";
+  document.getElementById("myname").style.color = "#06089aff";
+  document.getElementsByClassName("paragraph").style.color = "#06089aff";
   MouseOnDarkMode();
 }
 
@@ -134,5 +144,3 @@ function MouseOnDarkMode() {
     });
   });
 }
-
-अनुज के.सी
