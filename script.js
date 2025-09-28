@@ -38,12 +38,10 @@ const texts = ["Anuj kc", "अनुज के.सी"];
 let index = 0;
 
 setInterval(() => {
-  // move to next text
   index = (index + 1) % texts.length;
   document.getElementById("myname").textContent = texts[index];
 }, 4000);
 
-// const rightsection = document.querySelector(".right-section");
 const modebtn = document.getElementById("btn");
 modebtn.addEventListener("click", function () {
   const icon = document.querySelector("#btn i");
