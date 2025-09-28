@@ -9,13 +9,13 @@ document.addEventListener("mousemove", (e) => {
 document.querySelectorAll("a, button, li").forEach((el) => {
   el.addEventListener("mouseenter", () => {
     cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
-    cursor.style.background = "rgba(56, 238, 0, 0.7)";
-    cursor.style.border = "2px solid white";
+    cursor.style.background = "rgba(84, 138, 232, 0.7)";
+    cursor.style.border = "2px solid skyblue";
   });
   el.addEventListener("mouseleave", () => {
     cursor.style.transform = "translate(-50%, -50%) scale(1)";
     cursor.style.background = "rgba(255, 255, 255, 0.7)";
-    cursor.style.border = "2px solid white";
+    cursor.style.border = "2px solid blue";
   });
 });
 
@@ -53,8 +53,10 @@ modebtn.addEventListener("click", function () {
 function colorchnage(icon) {
   if (icon.className == "fa-regular fa-moon") {
     modedark(icon);
+    cursor.style.border = "2px solid black";
   } else {
     modelight(icon);
+    cursor.style.border = "2px solid white";
   }
 }
 
@@ -118,12 +120,12 @@ function MouseOnLightMode() {
     el.addEventListener("mouseenter", () => {
       cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
       cursor.style.background = "rgba(56, 238, 0, 0.7)";
-      cursor.style.border = "2px solid white";
+      // cursor.style.border = "2px solid white";
     });
     el.addEventListener("mouseleave", () => {
       cursor.style.transform = "translate(-50%, -50%) scale(1)";
       cursor.style.background = "rgba(255, 255, 255, 0.7)";
-      cursor.style.border = "2px solid white";
+      // cursor.style.border = "2px solid white";
     });
   });
 }
@@ -133,12 +135,12 @@ function MouseOnDarkMode() {
     el.addEventListener("mouseenter", () => {
       cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
       cursor.style.background = "rgba(0, 172, 238, 0.7)";
-      cursor.style.border = "2px solid black";
+      // cursor.style.border = "2px solid black";
     });
     el.addEventListener("mouseleave", () => {
       cursor.style.transform = "translate(-50%, -50%) scale(1)";
       cursor.style.background = "rgba(255, 255, 255, 0.7)";
-      cursor.style.border = "2px solid black";
+      // cursor.style.border = "2px solid black";
     });
   });
 }
